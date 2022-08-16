@@ -40,7 +40,8 @@ At this time, you can see the mapping relationship between serial0 -> ttyS0 and 
 In addition, we also need to disable the serial console, access the Raspberry Pi Configuration in the main menu, and select the Serial Console as Disable in the Interfaces options.<br>
 Install python serial library：<br>
 sudo apt-get install python3-serial<br>
-_2、Execute the demo codes of serial port _<br>
+
+_2、Execute the demo codes of serial port_<br>
 Access the terminal of Raspberry Pi and get the program directory:<br>
 cd /home/pi/RC522_RFID_HAT/<br>
 Python:<br>
@@ -71,6 +72,7 @@ Check the enabled SPI devices:<br>
 ls /dev/spi* # will print out:“/dev/spidev0.0”and“/dev/spidev0.1”<br>
 Install the spidev library for Python3:<br>
 sudo pip3 install spidev<br>
+
 _2、Execute the demo codes of SPI interface_ <br>
 Access the terminal of Raspberry Pi and get the program directory:<br>
 cd /home/pi/RC522_RFID_HAT/<br>
@@ -111,6 +113,7 @@ Install smbus of python:<br>
 sudo apt install python-smbus <br>
 Test the address of the device mounted on the I2C bus:<br>
 sudo i2cdetect -y -a 1<br>
+
 _2、Execute the demo codes of the I2C interface:_<br>
 cd /home/pi/RC522_RFID_HAT/<br>
 Python:<br>
